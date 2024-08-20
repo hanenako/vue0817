@@ -1,13 +1,24 @@
-<!-- src/components/About.vue -->
+<!-- src/components/Home.vue -->
 <template>
-    <div>
-      <h1>Home Page</h1>
-      <p>Learn more about us on this page.</p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'About',
+  <div id="app">
+    <h1>메인 페이지에 오신 것을 환영합니다!</h1>
+    <Slider />
+  </div>
+</template>
+
+<script>
+import Slider from './Slider.vue';
+
+export default {
+  name: 'Home',
+  components: {
+    Slider
   }
-  </script>
+}
+</script>
+
+<style>
+  body {
+    margin:0;
+  }
+</style>

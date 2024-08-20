@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .nav {
+      display: flex;
+      flex-direction: row;
+      background-color: #f8f9fa;
+      padding: 10px;
+    }
+    .nav .item {
+      margin-right: 15px;
+      font-size: 18px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .nav .item:hover {
+      text-decoration: underline;
+    }
+    .nav p.item {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a class="item" href="/">메인으로</a>
+    <a class="item" href="/first">First로 가기</a>
+    <div>
+      <p class="item">멋쟁이사자처럼</p>
+    </div>
+  </div>
+</body>
+</html>
