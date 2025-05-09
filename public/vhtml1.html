@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.prod.min.js"></script>
+</head>
+
+<body>
+    <h1>Vue3</h1>
+    <div id="app">
+      <div v-html="message"></div>
+    </div>
+    
+    <script>
+    const list = ['One', 'Two', 'Three']
+    const appdata = {
+      data() {
+        return {
+          message: `<ul>
+            <li>${list[0]}</li>
+            <li>${list[1]}</li>
+            <li>${list[2]}</li>
+          </ul>`
+        }
+      }
+    }
+  
+    let app = Vue.createApp(appdata)
+    app.mount('#app')
+    </script>
+  </body>
+
+</html>
