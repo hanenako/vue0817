@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.prod.min.js"></script>
+</head>
+
+<body>
+    <h1 class="bg-secondary text-white display-4 px-3">Vue3</h1>
+    <div id="app">
+        <p>{{ message }}</p>
+    </div>
+    
+    <script>
+    const appdata = {
+        data() {
+        return {
+            message: 'Hello Vue!',
+            count: 0
+        }
+    },
+    mounted() {
+        setInterval(() => {
+        this.count++
+        this.message = 'Count: ' + this.count
+        }, 1000)
+    }
+    }
+
+    Vue.createApp(appdata).mount('#app')
+    </script>
+</body>
+
+</html>
